@@ -91,7 +91,7 @@ New-AzResourceGroup -Name infra-backup -Location westeurope
 ## Storage Account
 New-AzStorageAccount -ResourceGroupName infra-backup -Name bicepbackupstore -Location westeurope -SkuName Standard_LRS -Kind StorageV2
 
-
+## Now run this script 
 ```powershell
 cd automation
 .\Setup-AutomationPrereqs.ps1 `
