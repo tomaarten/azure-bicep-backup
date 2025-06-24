@@ -80,7 +80,7 @@ This script sets up the Automation Account (if needed), enables its Managed Iden
 | HybridWorkerVMName      | (opt) `bicepworker01`   | VM name for Hybrid Worker (needs Bicep CLI)             |
 | SubscriptionId          | (opt) `xxxx-xxxx...`    | Subscription ID                                         |
 
-#### b. Run the script in Cloud Shell or PowerShell
+#### b. Run the script in Azure Cloud Shell or PowerShell
 
 ```powershell
 cd automation
