@@ -82,6 +82,16 @@ This script sets up the Automation Account (if needed), enables its Managed Iden
 
 #### b. Run the script in Azure Cloud Shell or PowerShell
 
+
+### First create the Resourcegroup and Storage Account
+
+## ResourceGroup
+New-AzResourceGroup -Name infra-backup -Location westeurope
+
+## Storage Account
+New-AzStorageAccount -ResourceGroupName infra-backup -Name bicepbackupstore -Location westeurope -SkuName Standard_LRS -Kind StorageV2
+
+
 ```powershell
 cd automation
 .\Setup-AutomationPrereqs.ps1 `
